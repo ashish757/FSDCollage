@@ -5,9 +5,31 @@
 </head>
 <style>
     hr {
-        transform: translate(-50%, -50%);
-        
+        animation: rotate 2s linear infinite;
+        transition: 2s transform;
+        border: none;
+
     }
+    /* rotate animation */
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+            background-color: rgb(138, 0, 0);
+            width: 0%;
+        }
+        50% {
+            transform: rotate(180deg);
+            background-color: rgb(255, 153, 0);
+            width: 100%;
+        }
+        100% {
+            transform: rotate(360deg);
+            background-color: rgb(255, 230, 0);
+            width: 50%;
+        }
+    }
+
+      
 </style>
 <body>
     <h1>Hello, World!</h1>
@@ -23,7 +45,7 @@
     <!-- break tag-->
     <br />
 
-    <hr color="red" size="10px" width="50%" align="center"/>
+    <hr size="10px" width="50%"/>
 
 </body>
 </html>
