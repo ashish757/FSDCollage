@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment - 5</title>
+</head>
+<body>
+    <center><h1>Student Registration Form</h1></center>
+    <hr/>
+    <form action="" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="fullName" required>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender"  value="male"> Male
+        <input type="radio" name="gender"  value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+        <label for="">Course:</label>
+        <select name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="btech">B.Tech</option>
+            <option value="mtech">M.Tech</option>       
+            <option value="bca">BCA</option>
+            <option value="mca">MCA</option>
+        </select>
+        <br>
+        <label for="">Contact No.</label>
+        <input type="text" placeholder="Enter your Phone number">
+        <br>
+        <label for="">Address:</label><br>
+        <textarea name="address" rows="4" cols="30" placeholder="Enter your Address"></textarea>
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+    <center><p>&copy; Student Registration Portal</p>    </center>
+</body>
+</html>
