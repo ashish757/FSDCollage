@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #box > p {
+            color: blue;
+        }
+        #box ~ p {
+            color: red;
+        }
+        a:link {
+            color: yellow;
+            font-size: 2rem;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: aquamarine;
+        }
+        a:visited {
+            color: green;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            font-family: monospace;
+        }
+        ul li {
+            background-color: rgb(189, 189, 189);
+            border-right: 2px solid rgb(73, 73, 73);
+            padding: .5rem 1rem;
+
+        }
+
+        ul li:nth-child(2) {
+            color: red;
+        }
+
+        ul li::first-letter {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>services</li>
+        <li>gallery</li>
+        <li>contact</li>
+    </ul>
+
+    <div id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur esse dolore illum dolorum saepe laboriosam, nesciunt, magni, officiis nam dolor sint et? Tempore quae nesciunt eligendi quia aperiam similique!
+        </p>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae explicabo eligendi accusantium non commodi hic ut nam inventore itaque consequuntur possimus exercitationem, deserunt veritatis saepe eos iste odio, suscipit molestias.
+            </p>
+        </div>
+    </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias officiis sed cupiditate. Delectus aspernatur temporibus ex commodi maxime, officiis id magnam fuga nam in aliquid! Neque natus minima qui.
+        </p>
+    <h3>
+        RDMS
+    </h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugit atque, distinctio doloribus neque quod rem molestiae. Illum enim laborum aspernatur tenetur, dolore non, quaerat minima magni, fuga ipsum molestias?
+    </p>
+
+    <a href="google.com">Visit the link</a>
+</body>
+</html>

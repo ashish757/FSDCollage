@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            height: 300px;
+        }
+        #outerBox {
+            width: 940px;
+            border: 2px solid red;
+            display: flex;
+            margin: 0px auto;
+            background-color: rgba(255, 0, 0, 0.239);
+        }
+        #outerBox > div {
+            width: 300px;
+            margin-right: 20px;
+            border: 2px solid green;
+            background-color: rgba(0, 255, 0, 0.155);
+        }
+
+        #outerBox div:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="outerBox">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
