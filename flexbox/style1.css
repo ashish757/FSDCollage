@@ -5,6 +5,7 @@
     font-family: monospace;
 }
 
+
 main {
     display: flex;
     flex-direction: column;
@@ -12,25 +13,46 @@ main {
     gap: 1rem;
     font-size: 1.5rem;
     width: 80vw;
-    height: 100vh;
     margin: 0 auto;
     background-color: aliceblue;
 }
 
-div:not(.content) {
-    background-color: rgb(214, 214, 214);
-    padding: 2rem;
+div {
+    background-color: lightblue;
+    padding: 1rem;
 }
 
-div.content {
+header, footer, nav {
+    background-color: lightcoral;
+    padding: 1rem;
+
+}
+
+section {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-div.content > div:nth-child(1) {
+section > div:nth-child(1) {
     flex-grow: 1;
 }
 
-div.content > div:nth-child(2) {
+section > div:nth-child(2) {
     flex-grow: 2;
+}
+
+section > div {
+    background-color: salmon;
+    height: 500px;
+}
+
+nav {
+    height: 70px;
+}
+header {
+    height: 150px;
+}
+
+footer {
+    height: 100px;
 }

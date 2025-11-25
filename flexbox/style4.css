@@ -16,16 +16,6 @@ main {
     background-color: aliceblue;
     text-align: center;
 }
-div#box {
-    height: 250px;
-    background-color: rgb(164, 219, 215);
-}
-
-section{
-    height: 800px;
-    background-color: rgb(214, 214, 214);
-}
-
 header {
     height: 100px;
     line-height: 100px;
@@ -36,4 +26,35 @@ footer {
     height: 80px;
     line-height: 80px;
     background-color: rgb(174, 218, 174);
+}
+
+section{
+    height: auto;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section > div.box {
+    background: rgb(133, 216, 255);
+    width: 200px;
+    height: 200px;
+}
+
+div#box {
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgb(164, 219, 215);
+}
+
+
+
+#box > div.box {
+    background: #eaffa5;
+    width: 200px;
+    flex-grow: 1;
 }
