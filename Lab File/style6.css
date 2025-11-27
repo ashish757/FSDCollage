@@ -70,8 +70,8 @@ body {
     font-size: 1.1em;
 }
 
-.add-to-cart-btn {
-    background-color: #ff9900;
+.add-to-cart-btn, .buy-now-btn {
+    background-color: #ffbd5a;
     color: #333;
     border: none;
     padding: 15px 30px;
@@ -86,6 +86,15 @@ body {
 
 .add-to-cart-btn:hover {
     background-color: #e68a00;
+}
+
+.buy-now-btn {
+    background-color: #ef9c00;
+    margin-bottom: 10px;
+}
+
+.buy-now-btn:hover {
+    background-color: #db8a10;
 }
 
 .stock-info {
